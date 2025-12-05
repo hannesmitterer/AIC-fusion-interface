@@ -128,7 +128,7 @@ const App = () => {
                     validationStatus = 'INVALID_TAMPERED';
                     console.warn(`[AUDIT-WARNUNG] Manipulation erkannt bei ${sig.councilMemberId}. Hash: ${sig.documentHash}. Erwartet: ${CORE_DOCUMENT_HASH}`);
                 } else {
-                     // Falsche Signatur (private Schlüssel wurde kompromittiert oder falsch generiert)
+                    // Falsche Signatur (private Schlüssel wurde kompromittiert oder falsch generiert)
                     validationStatus = 'INVALID_SIGNATURE';
                 }
 
